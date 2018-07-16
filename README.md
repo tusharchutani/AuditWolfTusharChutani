@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. This is a mock dashboard with two styles and search capabilities which consume the Audit Wolf's XML rest API.
 
+## How to run
+Make sure angular is installed on your device.
+1) cd PROJECTDIR
+2) npm install
+3) ng serve or ng serve -o
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
