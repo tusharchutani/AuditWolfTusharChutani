@@ -1,27 +1,37 @@
 # AuditWolf
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. This is a mock dashboard with two styles and search capabilities which consume the Audit Wolf's XML rest API.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Running tests
+Unfortunately due to time constraints no unit tests were written.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# File structure
+There are three main parts of the application Services, Components, and Models 
 
-## Running unit tests
+## Services
+We use it for consume the XML Rest API 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Components
+Since we are using angular we are using a template based approach which allows users to resume a lot of the components thus making code reusability very good for this application. 
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Models
+We use models to get Issue object
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Librries 
+
+## Lodash  
+Provides useful functions such as filtering
+documentation - https://lodash.com/
+
+## Material UI  
+Provides neat components and navigations
+documentation - https://material.angular.io/
+
