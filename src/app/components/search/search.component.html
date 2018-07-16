@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>Search Issues</h2>
+<form #f="ngForm" (ngSubmit)="navigateToSearch(f)">
+    <mat-dialog-content>
+        <mat-form-field>
+            <input matInput placeholder="Description" ngModel name="description">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-select ngModel name="severity" placeholder="Severity">
+                <mat-option value="HIGH">High</mat-option>
+                <mat-option value="MEDIUM">Medium</mat-option>
+                <mat-option value="LOW">Low</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Category" ngModel name="category">
+            <mat-hint>Assuming category list is NOT exhastive</mat-hint>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Resource" ngModel name="resource">
+            <mat-hint>Assuming resource list is NOT exhastive</mat-hint>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Resource group" ngModel name="resourcegroup">
+            <mat-hint>Assuming Resource group list is NOT exhastive</mat-hint>
+        </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button class="mat-raised-button mat-primary" type="submit">Search</button>
+        <button class="mat-raised-button" mat-dialog-close>Close</button>
+    </mat-dialog-actions>
+</form>

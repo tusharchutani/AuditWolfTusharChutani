@@ -1,0 +1,5 @@
+<mat-tab-group>
+    <mat-tab label="Material design"> <material-dashboard [issues]="issues" [isAdmin]=true></material-dashboard> </mat-tab>
+    <mat-tab label="Custom design"> <app-custom-dashboard [issues]="issues" [isAdmin]=true></app-custom-dashboard></mat-tab>
+    <mat-tab label="Issue overview"><app-reports [issues]="issues"></app-reports></mat-tab>
+  </mat-tab-group>

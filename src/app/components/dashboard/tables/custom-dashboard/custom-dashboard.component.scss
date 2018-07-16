@@ -1,0 +1,52 @@
+li{
+    padding-bottom:10px;
+    list-style-type: none;
+  
+    .issueInspect{
+      padding: 10px 0px 10px 20px;
+      border-radius:10px;
+      background-color: white;
+      margin-right: 20px;
+      
+      h5{
+        margin-top:5px; 
+        margin-bottom:5px;
+      }
+      border-left:hover{
+        border-width: 30px
+      }
+      .issueCategory{
+        color:#1a0dab;
+        font-size:20px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+        span{
+          font-size:1.0em;
+        }
+      }
+  
+      h4{
+        margin-bottom:3px;
+        margin-top:3px;
+      }
+      .description{
+        color:#1d1d1d;
+        font-size:17px;
+        padding-bottom: 6px;
+      }
+      .info{
+        padding-left:4px;
+      }
+      .categories{
+        color:#545454;
+        font-size:15px;
+        a{
+          border-radius: 10px;
+          margin-right:10px;
+        }
+      }
+  
+    }
+  }
+  
+  

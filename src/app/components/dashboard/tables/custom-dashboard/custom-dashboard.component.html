@@ -1,0 +1,27 @@
+<h1>List of issues</h1>
+<ul id="listOfIssues">
+    <li *ngFor="let issue of filteredList">
+
+    <div class="issueInspect" 
+    [ngStyle]="severityLeftBorder(issue.severity)">
+      <h5 [ngStyle]="severityHeading(issue.severity)">
+        {{issue.severity}}
+      </h5>
+        <div class="issueCategory">
+          
+          <span>{{issue.description}}</span>
+
+        </div>
+        <div *ngIf="isAdmin" class="categories">
+            <a title="Issue Category" mat-raised-button (click)="search(issue.category,'category')">{{issue.category}}</a>
+            <a title="Issue Resource" mat-raised-button (click)="search(issue.resource,'resource')" color="primary" routerLink=".">{{issue.resource}}</a>
+            <a title="Issue Resource group" mat-raised-button color="warn" (click)="search(issue.resourcegroup,'resourcegroup')" routerLink=".">{{issue.resourcegroup}}</a>
+      </div> 
+
+      </div>
+
+ 
+    </li>
+  </ul>
+
+  

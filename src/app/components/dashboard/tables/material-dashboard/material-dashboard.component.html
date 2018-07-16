@@ -1,0 +1,46 @@
+<div class="mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource" matSort aria-label="Elements">
+
+    <!-- Descrption Column -->
+    <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Description</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.description}}</mat-cell>
+    </ng-container>
+
+    <!-- Category Column -->
+    <ng-container matColumnDef="category">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Category</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.category}}</mat-cell>
+    </ng-container>
+
+    <!-- Severity Column -->
+    <ng-container matColumnDef="severity">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Severity</mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <span [ngStyle]="severityColor(row.severity)">{{row.severity}}</span></mat-cell>
+      </ng-container>   
+      
+    <!-- Resource column -->
+    <ng-container matColumnDef="resource">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Resource</mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <span>{{row.resource}}</span></mat-cell>
+      </ng-container>   
+      
+    <!-- Resource group -->
+    <ng-container matColumnDef="group">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Resource Group</mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <span>{{row.resourcegroup}}</span></mat-cell>
+      </ng-container>         
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  <mat-paginator #paginator
+  [length]="dataSource!=undefined ? dataSource.issues.length : 0"
+  [pageIndex]="0"
+  [pageSize]="50"
+  [pageSizeOptions]="[25, 50, 100, 250]">
+</mat-paginator>
+</div>

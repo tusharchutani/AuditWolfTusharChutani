@@ -1,0 +1,14 @@
+  mat-dialog-content{
+      width:450px;
+      // height:420px;
+    display: flex;
+    flex-direction: column;
+    // form {}
+      input{
+        width:100%;
+      }
+      mat-form-field{
+        padding-bottom:20px;
+      }
+  }
+  

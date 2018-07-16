@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+ *{
+    font-family: Oswald /*Replace with your custom font*/, sans-serif !important; 
+    /*Add the !important to overwrite all elements*/
+    mat-icon{
+      font-family: 'Material Icons' !important;
+    }
+   }
+
+
+
+  
+body { margin: 0; }
