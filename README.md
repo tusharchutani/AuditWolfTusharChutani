@@ -7,31 +7,35 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
 
-# Running tests
+## Running tests
 Unfortunately due to time constraints no unit tests were written.
 
 
-# File structure
+## File structure
 There are three main parts of the application Services, Components, and Models 
 
-## Services
+### Services
 We use it for consume the XML Rest API 
 
-## Components
+### Components
 Since we are using angular we are using a template based approach which allows users to resume a lot of the components thus making code reusability very good for this application. 
 
 
-## Models
+### Models
 We use models to get Issue object
 
 
-# Librries 
+## Librries 
 
-## Lodash  
+### Lodash  
 Provides useful functions such as filtering
 documentation - https://lodash.com/
 
-## Material UI  
+### Material UI  
 Provides neat components and navigations
 documentation - https://material.angular.io/
+
+### SCSS 
+A more powerful version of css 
+documentation - https://sass-lang.com/
 
